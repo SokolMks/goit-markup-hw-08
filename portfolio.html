@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio</title>
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header underline">
+    <div class="container">
+      <nav class="navigation">
+        <a href="./index.html" class="logo-header"><span class="logo-part">Web</span>Studio</a>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg class="menu__nav-menu" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/sprite.svg#nav-open"></use>
+          </svg>
+        </button>
+        <div class="main-navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item"><a href="./index.html" class="list-link">Студия</a></li>
+            <li class="navigation-list__item"><a href="./portfolio.html" class="list-link current">Портфолио</a></li>
+            <li class="navigation-list__item"><a href="#" class="list-link">Контакты</a></li>
+          </ul>
+          <ul class="contact-list">
+          <li class="contact-list__item">
+            <a href="mailto:info@devstudio.com" class="address-link">
+              <svg class="contact-svg" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a></li>
+          <li class="contact-list__item">
+            <a href="tel:+380961111111" class="address-link">
+            <svg class="contact-svg" width="10" height="16">
+              <use href="./images/sprite.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a></li>
+          </ul>
+        </div>
+        <div class="menu-container" data-menu>
+          <button type="button" class="menu-button__close" data-menu-close>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu__nav-cross" href="./images/sprite.svg#nav-cross"></use>
+            </svg>
+          </button>
+          <ul class="menu-pages">
+            <li class="menu-pages__item"><a href="./index.html" class="menu-link current">Студия</a></li>
+            <li class="menu-pages__item"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+            <li class="menu-pages__item"><a href="#" class="menu-link">Контакты</a></li>
+          </ul>
+          <ul class="menu-contacts">
+            <li class="menu-contacts__item item-email">
+              <a href="mailto:info@devstudio.com" class="menu-link menu-email">
+                <svg class="contact-svg" width="16" height="12">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a></li>
+            <li class="menu-contacts__item item-phone">
+              <a href="tel:+380961111111" class="menu-link">
+                <svg class="contact-svg" width="10" height="16">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a></li>
+          </ul>
+          <ul class="socials-navigation">
+            <li class="socials-navigation__item"><a lang="en" href="" class="navigation-link">Instagram</a></li>
+            <li class="socials-navigation__item"><a lang="en" href="" class="navigation-link">Twitter</a></li>
+            <li class="socials-navigation__item"><a lang="en" href="" class="navigation-link">Facebook</a></li>
+            <li class="socials-navigation__item"><a lang="en" href="" class="navigation-link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Герой -->
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="hidden">Портфолио</h1>
+        <ul class="filter-list">
+          <li class="filter-list__item"><button type="button" class="filter-button">Все</button></li>
+          <li class="filter-list__item"><button type="button" class="filter-button">Веб-сайты</button></li>
+          <li class="filter-list__item"><button type="button" class="filter-button">Приложения</button></li>
+          <li class="filter-list__item"><button type="button" class="filter-button">Дизайн</button></li>
+          <li class="filter-list__item"><button type="button" class="filter-button">Маркетинг</button></li>
+        </ul>
+        <ul class="projects">
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/technoHack.jpg" alt="Главная страница веб-сайта" width="370">
+                <div class="card-overlay">
+                  <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 class="card-title">Технокряк</h2>
+                <p>Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/NOvsGS.jpg" alt="Постер баскетбольного матча" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque, quam error, facilis rerum repudiandae culpa molestiae quisquam quas sit sed!</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 class="card-title basketball">Постер New Orlean vs Golden Star</h2>
+                <p>Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/seafoodRest.jpg" alt="Лого ресторана" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae beatae eaque magni. Voluptate cumque expedita hic in amet sunt ab labore</p>
+                </div>
+              </div> 
+              <div class="card-text">
+                <h2 class="card-title">Ресторан Seafood</h2>
+                <p>Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/projectPrime.jpg" alt="Фотография Наушников" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ut vero autem, et laudantium hic corrupti perferendis unde quam fugiat accusantium</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 class="card-title">Проект Prime</h2>
+                <p>Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/projectBoxes.jpg" alt="Фотография коробок" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus cumque modi accusamus repellendus totam quam saepe natus explicabo odit perferen</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 class="card-title">Проект Boxes</h2>
+                <p>Приложение</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/inspirationHasNoBorders.jpg" alt="Главная страница веб-сайта" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat magni quae quasi perspiciatis aut corporis maiores, error obcaecati! Repudianda</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 lang="en" class="card-title">Inspiration has no Borders</h2>
+                <p>Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/limitedEditionPublisher.jpg" alt="Фотография журнала" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis assumenda ratione sunt quis vitae sapiente repellat neque aspernatur sint</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 class="card-title">Издание Limited Edition</h2>
+                <p>Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/projectLAB.jpg" alt="Лого проекта LAB" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, eligendi quibusdam sint ipsum sequi ullam perferendis ipsam libero dolor veritatis?</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 class="card-title">Проект LAB</h2>
+                <p>Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="#" class="projects-item__link">
+              <div class="card-thumb">
+                <img src="./images/growingBusiness.jpg" alt="Главная страница веб-сайта" width="370">
+                <div class="card-overlay">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt et, ducimus architecto quis minus suscipit nam pariatur impedit vitae, harum itaque aut nulla</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <h2 lang="en" class="card-title">Growing Business</h2>
+                <p>Приложение</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="description">
+        <div class="footer-address">
+          <a href="./index.html" class="logo-footer"><span class="logo-part">Web</span>Studio</a>
+          <address class="address">
+            <p class="str-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="contact-address">
+              <li class="str-address"><a href="mailto:info@devstudio.com" class="str-address__link">info@devstudio.com</a></li>
+              <li class="str-address"><a href="tel:+380961111111" class="str-address__link">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="connect">
+          <p class="join">Присоединяйтесь</p>
+          <ul class="connect-list">
+            <li class="connect-list__item">
+              <a href="#" class="connect-list__link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-list__item">
+              <a href="#" class="connect-list__link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-list__item">
+              <a href="#" class="connect-list__link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="connect-list__item">
+              <a href="#" class="connect-list__link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="subscribe">
+        <form class="subscribe-form">
+        <p class="subscribe-title">Подпишитесь на рассылку</p>
+        <div class="subscribe-wrapper">
+          <input type="email" class="subscribe-input" name="email" placeholder="E-mail">
+          <button type="button" class="btn-subscribe">Подписаться 
+            <svg class="btn-subscribe__icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>  
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/menu.js"></script>
+</body>
+</html>

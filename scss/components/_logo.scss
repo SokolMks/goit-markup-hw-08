@@ -1,0 +1,33 @@
+/*Оформление лого*/
+%logo {
+  margin-right: 88px;
+  color:#000000;
+  font-family: Raleway, italic;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.logo-header {
+  @extend %logo;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+.logo-footer {
+  @extend %logo;
+  color: var(--primary-background-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: auto;
+  padding-right: auto;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+.logo-part {
+    color: var(--accent-color);
+}

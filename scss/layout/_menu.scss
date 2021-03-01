@@ -1,0 +1,126 @@
+.menu {
+  &-container {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    padding: 45px 40px;
+    background-color: var(--primary-background-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &-button {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  &-link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--cubic-transition);
+    &:hover,
+    &focus {
+      color: var(--accent-color);
+    }
+  }
+}
+.menu__nav-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.menu-button__close {
+  position: absolute;
+  top: 10px; 
+  right: 15px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: transparent;
+  transition: fill 250ms var(--cubic-transition);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.menu-pages{
+  &__item {
+    &:not(:last-child){
+      margin-bottom: 36px;
+    }
+    &:last-child {
+      margin-bottom: 302px;
+    }
+  }
+}
+.menu-contacts {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .menu-link {
+    font-size: 34px;
+    color: var(--accent-color);
+  }
+  .menu-email {
+    font-size: 24px;
+    color: var(--primary-text-color);
+  }
+}
+.item-phone {
+  margin-bottom: 32px;
+}
+.item-email {
+  margin-bottom: 64px;
+}
+.contact-svg {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+}
+.socials-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  &__item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    &:not(:last-child) {
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    }
+  }
+}
+.navigation-link {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color)
+}

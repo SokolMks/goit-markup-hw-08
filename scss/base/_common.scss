@@ -1,0 +1,50 @@
+/*Общие правила*/
+* {
+  margin: 0;
+  padding: 0;
+}
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html, body {
+  font-size: 40px;      
+  margin:0; /* remove default margin */
+  padding:0; /* remove default padding */
+  width:100%; /* take full browser width */
+  height:100%; /* take full browser height*/
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  text-decoration: none;
+  border: none;
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header {
+  background-color: var(--primary-background-color);
+}
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+footer {
+  background-color: var(--secondary-background-color);
+}
+address{
+  font-style: normal;
+}
