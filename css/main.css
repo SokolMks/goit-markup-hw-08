@@ -1459,28 +1459,34 @@ address {
 }
 
 .menu-pages__item:not(:last-child) {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .menu-pages__item:last-child {
   margin-bottom: 302px;
 }
 
+@media screen and (max-width: 375px) {
+  .menu-pages__item:last-child {
+    margin-bottom: 153px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu-contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    margin-bottom: 64px;
   }
 }
 
 .menu-contacts .menu-link {
   font-size: 34px;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 375px) {
+  .menu-contacts .menu-phone {
+    font-size: 32px;
+  }
 }
 
 .menu-contacts .menu-email {
@@ -1490,10 +1496,6 @@ address {
 
 .item-phone {
   margin-bottom: 32px;
-}
-
-.item-email {
-  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1518,6 +1520,12 @@ address {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 375px) {
+  .socials-navigation__item {
+    font-size: 14px;
+  }
 }
 
 .socials-navigation__item:not(:last-child) {
